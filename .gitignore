@@ -1,68 +1,23 @@
-# Xcode
-#
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+// 1..“Create a constant with an explicit type of Float and a value of 4”
+let explicitFloat : Float = 4.00
 
-## Build generated
-build/
-DerivedData/
 
-## Various settings
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-xcuserdata/
+let label = "The width is "
+let width = 94
+let widthLabel = label + String(width)
+//2..“Try removing the conversion to String from the last line. What error do you get”
+// a string and an integer cannot be added by "+" operator
 
-## Other
-*.moved-aside
-*.xccheckout
-*.xcscmblueprint
+//3.. “Use \() to include a floating-point calculation in a string and to include someone’s name in a greeting.”
 
-## Obj-C/Swift specific
-*.hmap
-*.ipa
-*.dSYM.zip
-*.dSYM
+let number : Float = 3.45
+let height = "the height of the tower is \(number)"
 
-## Playgrounds
-timeline.xctimeline
-playground.xcworkspace
+let greetings = "Good Morning"
+let greetToHim = "sir , \(greetings)"
 
-# Swift Package Manager
-#
-# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
-# Packages/
-# Package.pins
-# Package.resolved
-.build/
-
-# CocoaPods
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
-#
-# Pods/
-
-# Carthage
-#
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
-Carthage/Build
-
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
-# screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/#source-control
-
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots/**/*.png
-fastlane/test_output
+var shoppingList = ["catfish", "water", "tulips"]
+shoppingList[1] = "bottle of water"
+shoppingList.append("blue paint")
+print(shoppingList)
+// creating empty array
